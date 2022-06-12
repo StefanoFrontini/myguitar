@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "Chord";
+  src: url("../assets/fonts/chord_symbols.ttf");
+}
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1;
+  letter-spacing: 2px;
 }
 
 a {
@@ -13,4 +19,41 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+.input {
+  background-color: #f5f5f5;
+}
+.input textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.output {
+  background: #f5f5f5;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.line {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.lyric {
+  white-space: pre-wrap;
+}
+.chord {
+  font-family: "Chord";
+  color: #ff007f;
+  /* font-size: 1rem; */
+  font-weight: bold;
 }
